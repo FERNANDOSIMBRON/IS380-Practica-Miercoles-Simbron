@@ -27,7 +27,8 @@
 ---
 
 ### 2. Llamada Elegida: `read`
-![Caotura Parte A](img\Parte01-2.png)
+![Captura Parte A](img\Parte01-2.png)
+![Captura de pantalla de comandos grep para read](img/read.png)
 
 * **Interfaz (`kernel/syscall.h`):**[cite: 1]
   `#define SYS_read 5` (Línea identificada mediante grep)[cite: 1]

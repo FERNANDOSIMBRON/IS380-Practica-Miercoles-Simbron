@@ -9,6 +9,7 @@
 ## Parte 1: Interfaz, Tabla de Despacho e Implementación
 
 ### 1. Llamada Elegida: `getpid`
+![Captura de pantalla de comandos grep para getpid](img/getpid.png)
 ![Captura Parte A](img/Parte01.png)
 
 * **Interfaz (`kernel/syscall.h`):**[cite: 1]

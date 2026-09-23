@@ -30,7 +30,8 @@
 ![Captura Parte A](img\Parte01-2.png)
 
 * **Interfaz (`kernel/syscall.h`):**[cite: 1]
-![Captura Parte A](img/Parte01.png)  `#define SYS_read 5` (Línea identificada mediante grep)[cite: 1]
+![Captura Parte A](img/Parte01-2.png)  
+`#define SYS_read 5` (Línea identificada mediante grep)[cite: 1]
 * **Tabla de despacho (`kernel/syscall.c`):**[cite: 1]
   `[SYS_read] sys_read,` (Asociación en el arreglo `syscalls[]`)[cite: 1]
 * **Implementación (`kernel/sysfile.c`):**[cite: 1]

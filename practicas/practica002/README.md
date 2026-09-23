@@ -10,8 +10,6 @@
 
 ### 1. Llamada Elegida: `getpid`
 
-![Captura Parte A](img/Parte01.png)
-
 * **Interfaz (`kernel/syscall.h`):**
   `#define SYS_getpid 11` (Línea identificada mediante grep)
 * **Tabla de despacho (`kernel/syscall.c`):**
@@ -22,12 +20,12 @@
 > **Conexión de componentes:**
 > La llamada `getpid` se define mediante la macro `SYS_getpid` asociada a un número constante entero dentro de `kernel/syscall.h`. Este número es utilizado por `kernel/syscall.c` como índice dentro de la tabla de despacho `syscalls[]` para mapear dicho entero con la dirección de memoria de la función `sys_getpid`. Finalmente, la lógica que resuelve la petición para obtener el identificador del proceso se ejecuta dentro de la función `sys_getpid()`, ubicada en el archivo `kernel/sysproc.c`.
 
-*(Insertar captura de pantalla de los comandos grep para getpid aquí)*
+![Captura Parte A](img/Parte01.png)
+
 
 ---
 
 ### 2. Llamada Elegida: `read`
-![Captura Parte A](img/Parte01-2.png)
 * **Interfaz (`kernel/syscall.h`):**
 `#define SYS_read 5` (Línea identificada mediante grep)
 * **Tabla de despacho (`kernel/syscall.c`):**
@@ -38,7 +36,7 @@
 > **Conexión de componentes:**
 > Para la llamada `read`, el identificador numérico `SYS_read` se establece en `kerneL/syscall.h`. En `kernel/syscall.c`, esta constante posiciona a la función `sys_read` en la tabla de punteros `syscalls[]`. Como la operación involucra lectura de descriptores e interacción con sistemas de archivos o entrada/salida, su lógica funcional `sys_read()` se encuentra implementada en `kernel/sysfile.c`.
 
-*(Insertar captura de pantalla de los comandos grep para read aquí)*
+![Captura Parte A](img/Parte01-2.png)
 
 ---
 
